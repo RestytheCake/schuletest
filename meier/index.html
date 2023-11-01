@@ -1,0 +1,101 @@
+<!-- HTML 5 bezeichnung -->
+<!doctype html>
+<!-- Sprache die der Computer nutzen soll -->
+<html lang="de">
+ <!-- kopfteil der HTML Seite -->
+  <head>
+    <!-- UTF 8 deklarierung  -->
+      <meta charset="utf-8">
+    <!-- responsive -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Seiten Titel -->
+      <title>Schreinerei Meier, Dingenskirchen</title>
+    <!-- CSS Style | Stylesheet bezeichnung | href = pfad der datei -->
+      <link rel="stylesheet" href="css/better.css">
+    <!-- Favicom / Browser Icon | Bild Typ | href Pfad-->
+      <link rel="icon" type="image/x-icon" href="./img/logo.svg">
+  </head>
+  <!-- Body Part von der HTML Seite -->
+  <body>
+  <!-- Header / Kopfzeile -->
+    <header>
+    <!-- Logo | a tag / Link | Id für setzung zur einzigarten css gestaltung-->
+      <a id="backlink" href="/"><img src="img/logo.svg" alt="logo"></a>
+    <!-- Überschrift | Pharagrapf-->
+      <p>Schreinerei Meier</p>
+    <!-- Slogan -->
+      <p>Ihre Werkstatt f&uuml;r gutes Wohnen!</p>
+    </header>
+  <!-- Header / Kopfzeile ende -->
+  <!-- Navigation Liste-->
+      <nav>
+    <!-- ungeordnete Liste -->
+      <ul>
+	  <!-- Listen Abschnitt mit Link | aria-current = bedeutung, man ist auf der Seite-->
+        <li><a tabindex="0" aria-current="page">Startseite</a></li>
+        <li><a href="preise.html">Unsere Preise</a></li>
+        <li><a href="inhalt.html">Bilder von unseren Produkten</a></li>
+        <li><a href="kontakt.html">Kontakt und Impressum</a></li>
+    <!-- Liste ende -->
+      </ul>
+  <!-- Navigation ende -->
+    </nav>
+
+  <!-- Page Div | Container Tag für Zusammenhaltung von anderen Tag | Class für css gestaltung für mehrere tags mit selben class-->
+  <div class="page">
+      <!-- Überschrift größe H1-->
+      <h1>Willkommen bei der Schreinerei Meier im Internet!</h1>
+      <!-- Info Text -->
+      <p id="willkomenstext">Wir sind seit vielen Jahren darauf spezialisiert, alle Kundenwünsche zu erfüllen. In unserer Werkstatt produzieren wir selbst mit Holz aus regionaler, nachhaltiger Forstwirtschaft.</p>
+      <!-- Leistungen Übersicht | Section / Eine Zusammengehörige Gruppe/Text -->
+      <section id="leistungen">
+	  <!-- Unterüberschrift der Größe H2 -->
+          <h2>Unsere Leistungen:</h2>
+          <!-- unordered List / Liste Leistungen -->
+          <ul>
+              <li>Möbel nach Ihren Wünschen
+                  <!-- ordered List | Unterliste Möbel -->
+                  <ol>
+                      <li>Küchenmöbel</li>
+                      <li>Regale und Schrankwände</li>
+                      <li>Badezimmermöbel</li>
+                  </ol>
+                  <!-- Unterliste Möbel ende -->
+              </li>
+              <li>Haustüren</li>
+              <li>Gartenzäune</li>
+              <li>Reparaturen</li>
+          </ul>
+          <!-- Liste Leistungen ende -->
+          <!-- 10 % Rabatt Angebot | Aside Tag für nutzung von neben relevanten Informationen -->
+          <aside id="angebot">
+			<!-- Unter- Unterüberschrift der Größe H3 -->	
+              <h3>Angebot</h3>
+              <p>Nächste Woche 10 &percnt; auf alles!</p>
+          </aside>
+          <!-- 10 % Rabatt Angebot ende -->
+
+      </section>
+      <!-- Leistungen Übersicht ende -->
+      <!-- Unsere Geschichte -->
+      <section>
+          <h2>Unsere Geschichte:</h2>
+
+          <p class="geschichte-text">Die Anfänge unserer Firma reichen bis ins Mittelalter zurück, als Horst Holzmann begann seine
+              bisher für den Eigenbedarf hergestellten Möbel auch auf dem Markt der nächsten Stadt zu verkaufen.</p>
+
+          <p class="geschichte-text">Sein Sohn führte diese Tradition fort und nach ihm noch viele weitere Kinder und Kindeskinder.
+              Heute führt Schwiegersohn Harry Meier den Betrieb in der 15. Generation weiter und arbeitet bereits seinen Enkel als Nachfolger ein.</p>
+      </section>
+      <!-- Unsere Geschichte ende -->
+  </div>
+
+  <!-- Footer / Fußzeile -->
+    <footer>
+	<!-- hr für durchgezogene Linie -->
+	<hr>
+      <p>Copyright&copy; Arthur Ditte</p>
+    </footer>
+    <!-- Footer / Fußzeile ende -->
+  </body>
+</html>

@@ -1,0 +1,246 @@
+@charset "utf-8";
+
+/* Body Style / Allgemeiner Style */
+body {
+	/* Schriftart */
+    font-family: Arial, sans-serif;
+	/* Maximale Breite */
+    max-width:60em;
+	/* abstand zum anderen Tag */
+    margin: 1em auto;
+	/* Hintergrund Farbe */
+    background-color: #ffffff;
+}
+
+/* Page Style / Papier Design für Border */
+.page {
+    max-width: 800px;
+    margin: 20px auto;
+	/* Abstand innerhalb der Box zum Rand */
+    padding: 20px;
+    background-color: white;
+	/* Schatten und Ort */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+}
+
+/* Überschrift H1 */
+h1 {
+    background-color: #e6e6e6;
+    padding: 0.5em;
+    font-family: sans-serif;
+	/* Rand radius Größe und Breite */
+    border-radius: 0 1em 0em 1em;
+	/* text verteilung */
+    text-align: center;
+}
+
+h2 {
+    background-color: #efeeee;
+    padding: 0.5em;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+/* Header Anfang */
+
+/* Header Hintergrund */
+header {
+	/* Höhe */
+    height: 5em;
+    padding: 0 1em;
+	/* Abstand zum nächsten Tag nur unten */
+    margin-bottom: 2em;
+	/* Display typ Raster */
+    display: grid;
+	/* Ordnung im Display Typ */
+    grid-template-columns: 8em 1fr 1fr;
+}
+
+/* Header Logo */
+header p:first-of-type{
+	/* Schriftart Größe */
+    font-size: 2em;
+	/* Schriftart Style Bold für fett */
+    font-weight: bold;
+}
+
+/* Header Letzter Text  */
+header p:last-of-type {
+	/* Veränderung des Tags */
+    transform: rotate(8deg);
+    border: thin solid;
+    padding: 0.5em;
+    border-radius: 0.2em;
+	/* Text start */
+    align-self: end;
+    width: 15em;
+}
+
+/* Header Logo Click Link */
+header #backlink {
+    display:inline-block;
+    text-shadow: none;
+    color: transparent;
+    background: transparent;
+    background-size: contain;
+    width: 5em;
+    height: 3em;
+}
+
+/* Header Text */
+header p {
+	/* Abstand zum nächsten Tag links */
+    margin-left: 10px;
+}
+/* Header Ende */
+
+
+/* Navigation */
+
+/* Navigation Hintergrund */
+nav {
+    background-color: #eee;
+    padding: 10px;
+
+}
+
+/* Navigation Liste */
+nav ul {
+	/* List Stil, None für keinen */
+    list-style: none;
+	/* Flex für Flexible */
+    display: flex;
+	/* Content hat Space um sich rum */
+    justify-content: space-around;
+}
+
+/* Navigation Links */
+nav a {
+	/* Text Dekoration None für Keine */
+    text-decoration: none;
+	/* Farbe */
+    color: #333;
+}
+
+/* Navigation Hover */
+nav a:hover {
+	/* Hover Farbe */
+    color: #948f8f;
+}
+
+/* Navigation Aktive Seite */
+nav a[aria-current="page"] {
+    font-weight: bold;
+}
+
+/* Navigation Ende */
+
+/* Kontank.html anfang */
+/* Kontakt Article Anfang */
+
+/* Kontakt Article Hintergrund */
+article {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Kontakt Article Tabelle 1 */
+article dl {
+    display: grid;
+    grid-template-columns: auto 1fr;
+	/* Abstand */
+    gap: 10px;
+}
+
+/* Kontakt Article Tabelle 2 */
+article dt {
+    font-weight: bold;
+}
+
+/* Kontakt Article Tabelle 3 */
+article dd {
+    margin-left: 0;
+}
+/* Kontakt Article Ende */
+
+/* Kontank aside anfang */
+/* Kontakt aside Hintergrund */
+aside {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Kontakt aside Überschrift 2 */
+aside h2 {
+    text-align: center;
+}
+
+/* Kontakt aside Daten */
+aside span {
+    height: 15em;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+}
+/* Kontakt aside Ende */
+/* Kontank.html Ende */
+
+/* Footer / Fußzeile */
+footer {
+    background-color: #515151;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* ID - Styles */
+
+/* Index */
+#willkomenstext {
+    padding: 0 3em;
+    text-align: center;
+    font-size: 1em;
+    font-weight: normal;
+    margin-bottom: 1em;
+}
+
+.geschichte-text {
+    padding: 0 2em;
+    text-align: center;
+    font-size: 1em;
+    font-weight: normal;
+    margin-bottom: 1em;
+}
+/* Index Ende */
+
+/* Kontakt */
+#soziale-medien {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+	/* Richtung in der Kontent angezeigt wird */
+    flex-direction: row;
+}
+#sozial > a {
+    margin: 0 0.5em;
+}
+/* Kontak Ende */
+
+/* Media Style */
+@media (min-width: 30em) {
+    #leistungen {
+        display: grid;
+        grid-template-columns: 1fr 12em;
+    }
+
+    #leistungen h2 {
+        grid-column: 1 / -1;
+    }
+}
